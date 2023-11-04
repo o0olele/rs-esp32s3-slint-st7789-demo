@@ -1,0 +1,24 @@
+[package]
+name = "rs-esp32s3-no-std-st7789-demo"
+version = "0.1.0"
+authors = ["o0olele <o0olele@github.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+hal = { package = "esp32s3-hal", version = "0.13.0"}
+esp-backtrace = { version = "0.9.0", features = ["esp32s3", "panic-handler", "exception-handler", "print-uart"] }
+esp-println = { version = "0.7.0", features = ["esp32s3","log"] }
+log = { version = "0.4.18" }
+esp-alloc = { version = "0.3.0" }
+embedded-hal = "0.2.7"
+embedded-graphics-core = "0.4.0"
+embedded-graphics = "0.8.1" 
+embedded-graphics-framebuf = "0.5.0"
+display-interface = "0.4"
+display-interface-spi = "0.4"
+mipidsi = "0.7.1"
+slint = { git = "https://githubfast.com/slint-ui/slint", default-features = false, features = ["compat-1-2","unsafe-single-threaded","libm", "renderer-software"] }
+
+[build-dependencies]
+slint-build = { git = "https://githubfast.com/slint-ui/slint" }
