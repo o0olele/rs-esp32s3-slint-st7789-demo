@@ -2,10 +2,10 @@
 
 - this is a simple demo of slint ui, using rust and esp32s3, in no-std env.
 
-![slint](./image/slint.gif)
+    ![slint](./image/slint.gif)
 
 - build
 
-~~~shell
-cargo build --release
-~~~
+    ~~~shell
+    cargo build --release
+    ~~~
